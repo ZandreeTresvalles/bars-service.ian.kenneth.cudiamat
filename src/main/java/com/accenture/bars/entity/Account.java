@@ -2,7 +2,9 @@ package com.accenture.bars.entity;
 
 import java.time.LocalDateTime;
 import java.util.Set;
-import com.accenture.bars.entity.Billing;
+
+import com.accenture.bars.domain.Record;
+import com.accenture.bars.entity.Customer;
 
 public class Account {
 	private int accountId;
@@ -10,7 +12,7 @@ public class Account {
 	private LocalDateTime dateCreated;
 	private String isActive;
 	private String lastEdited;
-	//private Custumer customerId;
+	private Customer customerId;
 	private Set<Billing> billing;
 	
 	public Account() {
@@ -51,6 +53,10 @@ public class Account {
 	}
 	public void setBilling(Set<Billing> billing) {
 		this.billing = billing;
+	}
+	public Customer getCustomerId() {
+		// TODO Auto-generated method stub
+		return customerId;
 	}
 	
 }

@@ -2,7 +2,10 @@ package com.accenture.bars.repository;
 
 import java.time.LocalDate;
 
+import com.accenture.bars.entity.Billing;
+
 public class BillingRepository {
+	
 	private int billingId;
 	private	int billingCycle;
 	private	String billingMonth;
@@ -10,10 +13,9 @@ public class BillingRepository {
 	private LocalDate startDate;
 	private LocalDate endDate;
 	private String lastEdited;
-	//ACCOUNT HERE
-	public void findByBillingCycleAndStartDateAndEndDate(int cycle,LocalDate start,LocalDate end){
-	
-    }
+	public Billing findByBillingCycleAndStartDateAndEndDate(int billingCycle, LocalDate startDate, LocalDate endDate) {
+		return null;
+	}
 	public int getBillingId() {
 		return billingId;
 	}
