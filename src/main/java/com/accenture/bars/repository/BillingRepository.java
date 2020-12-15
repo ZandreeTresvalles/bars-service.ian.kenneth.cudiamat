@@ -8,6 +8,3 @@ import com.accenture.bars.entity.Billing;
 public interface BillingRepository extends JpaRepository<Billing, Integer>{
 	public Billing findByBillingCycleAndStartDateAndEndDate(int billingCycle, LocalDate startDate, LocalDate endDate);
 }
-	
-
-
