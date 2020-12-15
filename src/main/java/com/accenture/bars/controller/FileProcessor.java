@@ -24,7 +24,8 @@ import com.accenture.bars.xml.OutputXMLImpl;
 @Service
 public class FileProcessor {
 
-	
+	@SpringBootApplication(scanBasePackages={
+			"com.accenture.bars.repository.BillingRepository", "com.accenture.bars.controller.FileProcessor"})
 	@Autowired
 	private BillingRepository billingRepository;
 
